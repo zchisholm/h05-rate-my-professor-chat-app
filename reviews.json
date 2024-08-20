@@ -1,0 +1,124 @@
+{
+  "reviews": [
+    {
+      "professor": "Dr. Emily Thompson",
+      "subject": "Mathematics",
+      "stars": 4,
+      "review": "Dr. Thompson explains complex concepts clearly. Her enthusiasm for math is contagious!"
+    },
+    {
+      "professor": "Prof. Michael Chen",
+      "subject": "Computer Science",
+      "stars": 5,
+      "review": "Brilliant instructor. Prof. Chen's projects are challenging but incredibly rewarding."
+    },
+    {
+      "professor": "Dr. Sarah Johnson",
+      "subject": "Biology",
+      "stars": 3,
+      "review": "Lectures can be dry, but Dr. Johnson's lab sessions are engaging and informative."
+    },
+    {
+      "professor": "Prof. David Martinez",
+      "subject": "History",
+      "stars": 4,
+      "review": "Prof. Martinez brings history to life with fascinating anecdotes and discussions."
+    },
+    {
+      "professor": "Dr. Rachel Lee",
+      "subject": "Psychology",
+      "stars": 5,
+      "review": "Exceptional teacher. Dr. Lee's classes are thought-provoking and well-structured."
+    },
+    {
+      "professor": "Prof. Robert Wilson",
+      "subject": "Physics",
+      "stars": 2,
+      "review": "Brilliant mind, but Prof. Wilson struggles to explain concepts at an understandable level."
+    },
+    {
+      "professor": "Dr. Laura Schmidt",
+      "subject": "Literature",
+      "stars": 4,
+      "review": "Dr. Schmidt's passion for literature is evident. Her analysis of texts is insightful."
+    },
+    {
+      "professor": "Prof. James Taylor",
+      "subject": "Economics",
+      "stars": 3,
+      "review": "Prof. Taylor's lectures are informative, but his exams can be unnecessarily difficult."
+    },
+    {
+      "professor": "Dr. Olivia Patel",
+      "subject": "Chemistry",
+      "stars": 5,
+      "review": "Dr. Patel is an amazing educator. Her labs are well-organized and her explanations are crystal clear."
+    },
+    {
+      "professor": "Prof. Thomas Brown",
+      "subject": "Philosophy",
+      "stars": 4,
+      "review": "Thought-provoking lectures. Prof. Brown encourages critical thinking and lively debates."
+    },
+    {
+      "professor": "Dr. Jennifer Wong",
+      "subject": "Sociology",
+      "stars": 3,
+      "review": "Dr. Wong's research is interesting, but her teaching style can be a bit disorganized."
+    },
+    {
+      "professor": "Prof. Daniel Kim",
+      "subject": "Art History",
+      "stars": 5,
+      "review": "Prof. Kim's passion for art is infectious. His lectures are like guided tours through time."
+    },
+    {
+      "professor": "Dr. Sophia Rodriguez",
+      "subject": "Environmental Science",
+      "stars": 4,
+      "review": "Dr. Rodriguez brings real-world examples into the classroom, making the subject highly relevant."
+    },
+    {
+      "professor": "Prof. William Chang",
+      "subject": "Political Science",
+      "stars": 2,
+      "review": "Prof. Chang seems knowledgeable but often goes off-topic, making it hard to follow the course material."
+    },
+    {
+      "professor": "Dr. Elizabeth Foster",
+      "subject": "Anthropology",
+      "stars": 5,
+      "review": "Dr. Foster's field experience enriches her lectures. She makes anthropology fascinating and accessible."
+    },
+    {
+      "professor": "Prof. Alex Nguyen",
+      "subject": "Engineering",
+      "stars": 4,
+      "review": "Prof. Nguyen's practical approach to engineering problems is extremely helpful. Challenging but fair."
+    },
+    {
+      "professor": "Dr. Catherine White",
+      "subject": "Linguistics",
+      "stars": 3,
+      "review": "Dr. White is knowledgeable, but her assignments can be vague and difficult to understand."
+    },
+    {
+      "professor": "Prof. Samuel Green",
+      "subject": "Business",
+      "stars": 5,
+      "review": "Prof. Green's real-world experience in business adds tremendous value to his classes. Highly recommended!"
+    },
+    {
+      "professor": "Dr. Natalie Clark",
+      "subject": "Neuroscience",
+      "stars": 4,
+      "review": "Dr. Clark simplifies complex neurological concepts. Her enthusiasm for the subject is contagious."
+    },
+    {
+      "professor": "Prof. Kevin Lee",
+      "subject": "Music Theory",
+      "stars": 3,
+      "review": "Prof. Lee is a talented musician, but his teaching style can be a bit too abstract for beginners."
+    }
+  ]
+}
