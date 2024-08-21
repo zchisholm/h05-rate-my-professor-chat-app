@@ -1,6 +1,7 @@
 "use client";
 import { Box, Button, Stack, TextField } from "@mui/material";
 import { useState } from "react";
+import {onKeyPress} from './utils/onKeyPress'
 
 export default function Home() {
   const [messages, setMessages] = useState([
@@ -13,7 +14,11 @@ export default function Home() {
 
   const [message, setMessage] = useState("");
 
+
   const sendMessage = async () => {
+    if (message.trim() == "" ){
+      return
+    }
     const newMessages = [
       ...messages,
       { role: "user", content: message },
@@ -47,11 +52,12 @@ export default function Home() {
             { ...lastMessage, content: lastMessage.content + text },
           ];
         });
-
+        setMessage('')
         return reader.read().then(processText);
       });
     });
   };
+  onKeyPress(sendMessage, 'Enter')
 
   return (
     <Box
