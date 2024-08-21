@@ -13,12 +13,14 @@ export default function Home() {
   ]);
 
   const [message, setMessage] = useState("");
-
+  const [loading, setLoading] = useState(false)
 
   const sendMessage = async () => {
-    if (message.trim() == "" ){
+    if (message.trim() == "" || loading){
       return
     }
+
+    setLoading(true)
     const newMessages = [
       ...messages,
       { role: "user", content: message },
@@ -53,6 +55,7 @@ export default function Home() {
           ];
         });
         setMessage('')
+        setLoading(false)
         return reader.read().then(processText);
       });
     });
