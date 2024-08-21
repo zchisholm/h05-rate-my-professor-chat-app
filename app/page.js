@@ -61,13 +61,16 @@ export default function Home() {
       flexDirection="column"
       justifyContent="center"
       alignItems="center"
+      bgcolor="#f0f2f5"
     >
       <Stack
         direction="column"
-        width="500px"
-        height="700px"
-        border="1px solid black"
-        p={2}
+        width="400px"
+        height="600px"
+        bgcolor="white"
+        boxShadow="0px 4px 20px rgba(0, 0, 0, 0.1)"
+        borderRadius={12}
+        p={3}
         spacing={3}
       >
         <Stack
@@ -75,7 +78,16 @@ export default function Home() {
           spacing={2}
           flexGrow={1}
           overflow="auto"
-          maxHeight={"100%"}
+          sx={{
+            scrollbarWidth: "thin",
+            "&::-webkit-scrollbar": {
+              width: "5px",
+            },
+            "&::-webkit-scrollbar-thumb": {
+              backgroundColor: "#c1c1c1",
+              borderRadius: "5px",
+            },
+          }}
         >
           {messages.map((message, index) => (
             <Box
@@ -86,10 +98,15 @@ export default function Home() {
               }
             >
               <Box
-                bgcolor={message.role === "assistant" ? "blue" : "red"}
+                bgcolor={message.role === "assistant" ? "#007bff" : "#f03e3e"}
                 color="white"
-                borderRadius={16}
-                p={3}
+                borderRadius="20px"
+                p={2}
+                maxWidth="80%"
+                boxShadow="0px 2px 10px rgba(0, 0, 0, 0.1)"
+                sx={{
+                  typography: "body1",
+                }}
               >
                 {message.content}
               </Box>
@@ -98,14 +115,36 @@ export default function Home() {
         </Stack>
         <Stack direction="row" spacing={2}>
           <TextField
-            label="Message"
+            label="Type a message..."
             fullWidth
             value={message}
             onChange={(e) => {
               setMessage(e.target.value);
             }}
+            variant="outlined"
+            sx={{
+              bgcolor: "#f8f9fa",
+              borderRadius: "20px",
+              "& .MuiOutlinedInput-root": {
+                "& fieldset": {
+                  border: "none",
+                },
+              },
+            }}
           />
-          <Button variant="contained" onClick={sendMessage}>
+          <Button
+            variant="contained"
+            onClick={sendMessage}
+            sx={{
+              bgcolor: "#007bff",
+              color: "white",
+              borderRadius: "20px",
+              padding: "10px 20px",
+              "&:hover": {
+                bgcolor: "#0056b3",
+              },
+            }}
+          >
             Send
           </Button>
         </Stack>
